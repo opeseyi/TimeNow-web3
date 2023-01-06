@@ -1,0 +1,85 @@
+[
+  {
+    "type": "constructor",
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_address" }]
+  },
+  {
+    "type": "error",
+    "name": "PriceConsumerV3__InsufficietDeposts",
+    "inputs": [
+      { "type": "address" },
+      { "type": "uint256" },
+      { "type": "uint256" }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "PriceConsumerV3__PaymentNotSuccessfull",
+    "inputs": [
+      { "type": "address" },
+      { "type": "uint256" },
+      { "type": "uint256" }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "PaymentSuccessFul",
+    "inputs": [
+      { "type": "address", "name": "sender", "indexed": false },
+      { "type": "uint256", "name": "amount", "indexed": false },
+      { "type": "uint256", "name": "time", "indexed": false }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "_getPriceRate",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "gas": 29000000,
+    "inputs": [{ "type": "uint256", "name": "_amount" }],
+    "outputs": [{ "type": "uint256" }]
+  },
+  {
+    "type": "function",
+    "name": "getPayers",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "gas": 29000000,
+    "inputs": [],
+    "outputs": [{ "type": "uint256" }]
+  },
+  {
+    "type": "function",
+    "name": "getPriceFeed",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "gas": 29000000,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "getPriceOfContract",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "gas": 29000000,
+    "inputs": [],
+    "outputs": [{ "type": "uint256" }]
+  },
+  {
+    "type": "function",
+    "name": "pay",
+    "constant": false,
+    "stateMutability": "payable",
+    "payable": true,
+    "gas": 29000000,
+    "inputs": [],
+    "outputs": [{ "type": "bool" }]
+  }
+]
